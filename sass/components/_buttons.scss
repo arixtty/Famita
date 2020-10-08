@@ -1,8 +1,15 @@
 .btn {
-    font-family: inherit;
-    border: none;
+    display: inline-block;
+    text-align: center;
     font-size: 1.4rem;
     text-transform: uppercase;
-    padding: 1rem 2rem;
+    padding: 1.2rem 2rem 1rem;
     background-color: #fff;
+    border: 2px solid transparent;
+    border-radius: 3px;
+
+    &--outline {
+        background-color: transparent;
+        border: 2px solid $accent-color;
+    }
 }
