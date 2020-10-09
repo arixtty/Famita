@@ -1,0 +1,7 @@
+.product-gallery {
+	padding-top: 5rem;
+	width: 80%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+	grid-gap: 5rem;
+}
