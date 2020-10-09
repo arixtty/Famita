@@ -1,0 +1,25 @@
+.subscribe-form {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 3fr 1fr;
+	width: 100%;
+
+	&__input {
+		grid-column: 1;
+		border: 2px solid $color-grey-light;
+		border-right: none;
+		border-radius: 3px 0 0 3px;
+		padding-left: 1rem;
+
+		&:focus {
+			outline: none;
+			border: 2px solid $accent-color;
+		}
+	}
+
+	&__btn {
+		grid-column: 2;
+		border-radius: 0 3px 3px 0;
+
+	}
+}
