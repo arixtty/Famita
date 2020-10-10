@@ -1,3 +1,9 @@
+.main {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 8rem 0;
+}
+
 body {
 	padding: 0 8rem;
 

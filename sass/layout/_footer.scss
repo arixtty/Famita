@@ -1,9 +1,10 @@
 .footer {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-	gap: 7rem;
+	grid-gap: 7rem;
 	color: $color-grey-dark;
-	padding: 8rem 0;
+	margin-top: 8rem;
+	padding-top: 2rem;
 	border-top: 1px solid $color-grey-light;
 
 	@media only screen and (max-width: 71.25em) {
@@ -11,7 +12,7 @@
 	}
 
 	@media only screen and (max-width: 25em) {
-		gap: 4rem;
+		grid-gap: 4rem;
 	}
 
 	&__copy {
