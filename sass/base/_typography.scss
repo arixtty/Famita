@@ -1,0 +1,39 @@
+body {
+	font-size: 1.6rem;
+	font-family: sans-serif;
+	font-weight: 300;
+	color: $color-black;
+}
+
+.heading-primary {
+	font-size: calc(3rem + 5vw);
+	font-weight: 300;
+
+	&--accented {
+		color: $accent-color;
+	}
+}
+
+.heading-secondary {
+	font-size: calc(2rem + 1vw);
+	font-weight: 300;
+
+	&--cta {
+	font-size: calc(1.5rem + 1vw);
+	}
+}
+
+.heading-tertiary {
+	font-size: 1.8rem;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.subheading {
+	font-size: 1.3rem;
+	text-transform: uppercase;
+}
+
+.subheading-secondary {
+	font-size: calc(.7rem + 1vw);
+}

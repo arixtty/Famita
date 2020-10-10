@@ -10,16 +10,18 @@
 		border-right: none;
 		border-radius: 3px 0 0 3px;
 		padding-left: 1rem;
+		appearance: none;
+		-webkit-appearance: none;
 
 		&:focus {
 			outline: none;
 			border: 2px solid $accent-color;
+			border-right: none;
 		}
 	}
 
 	&__btn {
 		grid-column: 2;
 		border-radius: 0 3px 3px 0;
-
 	}
 }
