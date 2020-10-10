@@ -1,5 +1,9 @@
 .main-nav {
 
+  @media only screen and (max-width: 32.5em) {
+    display: none;
+  }
+
   &__list {
     list-style: none;
     display: grid;
@@ -19,6 +23,10 @@
 }
 
 .user-nav {
+  
+  @media only screen and (max-width: 32.5em) {
+    display: none;
+  }
 
   &__list {
     list-style: none;
@@ -30,5 +38,46 @@
 
   &__list-item {
     color: $color-grey-dark;
+  }
+}
+
+.container-nav-mobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba($color: #fff, $alpha: .9);
+  padding: 20rem 5rem 20rem 15rem;
+  display: none;
+  
+  @media only screen and (max-width: 32.5em) {
+    display: block;
+  }
+}
+
+.main-nav-mobile {
+  
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: end;
+    grid-gap: 5rem;
+  }
+
+  &__list-item {
+    font-size: 2rem;
+  }
+}
+
+.user-nav-mobile {
+  margin-top: 10rem;
+  
+  &__list {
+    display: grid;
+    justify-items: end;
+    grid-gap: 5rem;
+  }
+
+  &__list-item {
+    font-size: 2rem;
   }
 }

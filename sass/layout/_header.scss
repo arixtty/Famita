@@ -1,9 +1,14 @@
 .header {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	align-items: center;
 	padding: 0.8rem 0;
+	position: relative; // для позиционирования мобильного меню
 
+	&__container-wide {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		align-items: center;
+	}
+	
+	
 	@media only screen and (max-width: 71.25em) {
 		padding: 0.8rem 2rem;
 	}
