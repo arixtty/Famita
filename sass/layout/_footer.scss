@@ -42,6 +42,8 @@
 	}
 
 	&__box {
+		justify-self: start;
+
 	}
 
 	&__address {
@@ -63,10 +65,46 @@
 		list-style: none;
 		text-align: center;
 
-		&__icon {
+		&__item {
+			border-radius: 100%;
+			background-color: $color-grey-light;
 			display: inline-block;
-			&:not(:last-child) {
-				margin-right: 0.5rem;
+			height: 4rem;
+			width: 4rem;
+			margin: .2rem;
+
+			@media only screen and (max-width: 60em) {
+				height: 3rem;
+				width: 3rem;
+			}
+
+			@media only screen and (max-width: 48em) {
+				height: 2.6rem;
+				width: 2.6rem;
+			}
+
+			&:hover {
+				background-color: $accent-color;
+			}
+
+			&:hover > * {
+				fill: #fff;
+			}
+		}
+
+		&__icon {
+			height: 2rem;
+			width: 2rem;
+			transform: translateY(50%);
+
+			@media only screen and (max-width: 60em) {
+				height: 1.5rem;
+				width: 1.5rem;
+			}
+
+			@media only screen and (max-width: 60em) {
+				height: 1.3rem;
+				width: 1.3rem;
 			}
 		}
 	}

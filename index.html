@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Famita.</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -25,9 +26,21 @@
 		
 				<nav class="user-nav">
 					<ul class="user-nav__list">
-						<li class="user-nav__list-item">O</li>
-						<li class="user-nav__list-item">O</li>
-						<li class="user-nav__list-item">O</li>
+						<li class="user-nav__list-item">
+							<svg class="user-nav__icon icon-cart">
+								<use xlink:href="img/sprite.svg#icon-cart"></use>
+							</svg>
+						</li>
+						<li class="user-nav__list-item">
+														<svg class="user-nav__icon icon-heart">
+								<use xlink:href="img/sprite.svg#icon-heart"></use>
+							</svg>
+						</li>
+						<li class="user-nav__list-item">
+														<svg class="user-nav__icon icon-search">
+								<use xlink:href="img/sprite.svg#icon-search"></use>
+							</svg>
+						</li>
 					</ul>
 				</nav>
 			</div>
@@ -43,9 +56,21 @@
 	
 				<nav class="user-nav-mobile">
 					<ul class="user-nav__list user-nav-mobile__list">
-						<li class="user-nav__list-item user-nav-mobile__list-item">O</li>
-						<li class="user-nav__list-item user-nav-mobile__list-item">O</li>
-						<li class="user-nav__list-item user-nav-mobile__list-item">O</li>
+						<li class="user-nav__list-item user-nav-mobile__list-item">
+							<svg class="user-nav__icon icon-cart">
+								<use xlink:href="img/sprite.svg#icon-cart"></use>
+							</svg>
+						</li>
+						<li class="user-nav__list-item user-nav-mobile__list-item">
+														<svg class="user-nav__icon icon-heart">
+								<use xlink:href="img/sprite.svg#icon-heart"></use>
+							</svg>
+						</li>
+						<li class="user-nav__list-item user-nav-mobile__list-item">
+														<svg class="user-nav__icon icon-search">
+								<use xlink:href="img/sprite.svg#icon-search"></use>
+							</svg>
+						</li>
 					</ul>
 				</nav>
 			</div>
@@ -203,22 +228,30 @@
 			</section>
 	
 			<section class="features">
-				<div class="features__icon">O</div>
+				<!-- <div class="features__icon"> -->
+					<svg class="features__icon icon-wallet"><use xlink:href="img/sprite.svg#icon-wallet"></use></svg>
+				</div>
 				<div class="features__box">
 					<p class="features__feature">Бесплатная доставка</p>
 					<p class="features__condition">для всех заказов от ₽3000</p>
 				</div>
-				<div class="features__icon">O</div>
+				<!-- <div class="features__icon"> -->
+					<svg class="features__icon icon-undo"><use xlink:href="img/sprite.svg#icon-undo"></use></svg>
+				</div>
 				<div class="features__box">
 					<p class="features__feature">Вернуть за месяц</p>
 					<p class="features__condition">не подошедшие товары</p>
 				</div>
-				<div class="features__icon">O</div>
+				<!-- <div class="features__icon"> -->
+					<svg class="features__icon icon-credit-card"><use xlink:href="img/sprite.svg#icon-credit-card"></use></svg>
+				</div>
 				<div class="features__box">
 					<p class="features__feature">Безопасная оплата</p>
 					<p class="features__condition">на все 100%</p>
 				</div>
-				<div class="features__icon">O</div>
+				<!-- <div class="features__icon"> -->
+					<svg class="features__icon icon-phone"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
+				</div>
 				<div class="features__box">
 					<p class="features__feature">Помощь 24/7</p>
 					<p class="features__condition">вежливые специалисты</p>
@@ -258,10 +291,18 @@
 			<div class="footer__address-postal">Москва, ул. Несущественная, 22</div>
 		</address>
 		<ul class="social-media">
-			<li class="social-media__icon">1</li>
-			<li class="social-media__icon">2</li>
-			<li class="social-media__icon">3</li>
-			<li class="social-media__icon">4</li>
+			<li class="social-media__item">
+				<svg class="social-media__icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
+			</li>
+			<li class="social-media__item">
+				<svg class="social-media__icon icon-instagram"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg>
+			</li>
+			<li class="social-media__item">
+				<svg class="social-media__icon icon-twitter"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
+			</li>
+			<li class="social-media__item">
+				<svg class="social-media__icon icon-pinterest"><use xlink:href="img/sprite.svg#icon-pinterest"></use></svg>
+			</li>
 		</ul>
 	</div>
 </footer>

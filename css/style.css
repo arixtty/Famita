@@ -31,7 +31,7 @@ body {
 
 body {
   font-size: 1.6rem;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: #252525;
 }
@@ -229,6 +229,9 @@ body {
 .footer__nav-list-item {
   font-size: 1.5rem;
 }
+.footer__box {
+  justify-self: start;
+}
 .footer__address {
   font-style: normal;
   margin-bottom: 2rem;
@@ -245,11 +248,48 @@ body {
   list-style: none;
   text-align: center;
 }
-.footer .social-media__icon {
+.footer .social-media__item {
+  border-radius: 100%;
+  background-color: #CCCCCC;
   display: inline-block;
+  height: 4rem;
+  width: 4rem;
+  margin: 0.2rem;
 }
-.footer .social-media__icon:not(:last-child) {
-  margin-right: 0.5rem;
+@media only screen and (max-width: 60em) {
+  .footer .social-media__item {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .footer .social-media__item {
+    height: 2.6rem;
+    width: 2.6rem;
+  }
+}
+.footer .social-media__item:hover {
+  background-color: #19C880;
+}
+.footer .social-media__item:hover > * {
+  fill: #fff;
+}
+.footer .social-media__icon {
+  height: 2rem;
+  width: 2rem;
+  transform: translateY(50%);
+}
+@media only screen and (max-width: 60em) {
+  .footer .social-media__icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+@media only screen and (max-width: 60em) {
+  .footer .social-media__icon {
+    height: 1.3rem;
+    width: 1.3rem;
+  }
 }
 
 .main {
@@ -317,10 +357,15 @@ body {
   display: grid;
   grid-template-columns: repeat(3, min-content);
   justify-content: end;
-  grid-gap: 2rem;
+  grid-gap: 3rem;
 }
 .user-nav__list-item {
   color: #707070;
+}
+.user-nav__icon {
+  height: 1.6rem;
+  width: 1.6rem;
+  fill: #252525;
 }
 
 .container-nav-mobile {
@@ -465,12 +510,14 @@ body {
 @media only screen and (max-width: 60em) {
   .features {
     grid-template-columns: repeat(2, 2fr 5fr);
-    grid-gap: 8rem 0;
+    grid-gap: 8rem 2rem;
   }
 }
 .features__icon {
-  justify-self: center;
-  align-self: center;
+  justify-self: end;
+  height: 2.8rem;
+  width: 2.8rem;
+  fill: #19C880;
 }
 .features__feature {
   font-size: 1.8rem;
